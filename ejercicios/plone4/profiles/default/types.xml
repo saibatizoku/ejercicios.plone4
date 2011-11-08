@@ -3,4 +3,5 @@
 <!-- <property name="title">Controls the available content types in your portal</property> -->
     <object meta_type="Dexterity FTI" name="ejercicios.plone4.especial" />
     <object meta_type="Dexterity FTI" name="ejercicios.plone4.eleccion" />
+    <object meta_type="Dexterity FTI" name="ejercicios.plone4.candidato" />
 </object>
