@@ -12,20 +12,20 @@ class Fixture(PloneSandboxLayer):
 
     def setUpZope(self, app, configurationContext):
         # Load ZCML
-        import ejerecicios.plone4
-        self.loadZCML(package=ejerecicios.plone4)
+        import ejercicios.plone4
+        self.loadZCML(package=ejercicios.plone4)
 
     def setUpPloneSite(self, portal):
         # Install into Plone site using portal_setup
-        self.applyProfile(portal, 'ejerecicios.plone4:default')
+        self.applyProfile(portal, 'ejercicios.plone4:default')
 
 
 FIXTURE = Fixture()
 INTEGRATION_TESTING = IntegrationTesting(
     bases=(FIXTURE,),
-    name='ejerecicios.plone4:Integration',
+    name='ejercicios.plone4:Integration',
     )
 FUNCTIONAL_TESTING = FunctionalTesting(
     bases=(FIXTURE,),
-    name='ejerecicios.plone4:Functional',
+    name='ejercicios.plone4:Functional',
     )
