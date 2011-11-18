@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 
-from zope.i18nmessageid import MessageFactory
+try:
+    from zope.i18nmessageid import MessageFactory
 
-_ = MessageFactory('ejercicios.plone4')
+    _ = MessageFactory('ejercicios.plone4')
+except ImportError:
+    _ = unicode
